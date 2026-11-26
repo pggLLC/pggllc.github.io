@@ -2,6 +2,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 import sys
+import xml.etree.ElementTree as ET
 root=Path(__file__).resolve().parents[1]
 class Page(HTMLParser):
  def __init__(self):super().__init__();self.links=[];self.ids=set();self.h1=0;self.title=False;self.desc=False;self.lang=False
@@ -18,6 +19,9 @@ pages={}
 for file in root.rglob('*.html'):
  q=Page();q.feed(file.read_text());pages[file]=q
 errors=[];count=0
+for asset in (root/'assets').glob('*.svg'):
+ try:ET.parse(asset)
+ except ET.ParseError as e:errors.append(f'{asset.name}: invalid SVG: {e}')
 for file,q in pages.items():
  if file.name=='housing-insights.html':continue
  if not(q.h1==1 and q.title and q.desc and q.lang):errors.append(f'{file}: document semantics')
