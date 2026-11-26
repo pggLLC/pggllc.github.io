@@ -1,0 +1,95 @@
+{
+  "title": "PGG sample memo evidence register",
+  "retrieved": "2026-11-26",
+  "geography": {
+    "geoid": "0828745",
+    "name": "Fruita (city)",
+    "type": "place",
+    "region": "Western Slope",
+    "containingCounty": "08077"
+  },
+  "generated_from": {
+    "ranking_index_generated_at": "2026-11-22T14:14:01Z",
+    "ranking_index_version": "1.0",
+    "builder": "scripts/hna/build_jurisdiction_metrics_digest.mjs",
+    "economic_bridge": "scripts/hna/economic_housing_bridge.py"
+  },
+  "source_url": "https://cohoanalytics.com/data/hna/jurisdiction-metrics-digest/0828745.json",
+  "metrics": {
+    "population": {
+      "value": 13691,
+      "geography_level": "place",
+      "confidence": "high",
+      "source_id": "acs-profile",
+      "as_of": "ACS 2020-2024 5-year",
+      "measure_type": "level"
+    },
+    "median_hh_income": {
+      "value": 87184,
+      "geography_level": "place",
+      "confidence": "high",
+      "source_id": "acs-profile",
+      "as_of": "ACS 2020-2024 5-year",
+      "measure_type": "level"
+    },
+    "gross_rent_median": {
+      "value": 1472,
+      "geography_level": "place",
+      "confidence": "high",
+      "source_id": "acs-profile",
+      "as_of": "ACS 2020-2024 5-year",
+      "measure_type": "level"
+    },
+    "pct_cost_burdened": {
+      "value": 43.6,
+      "geography_level": "place",
+      "confidence": "high",
+      "source_id": "acs-profile-dp04-grapi",
+      "as_of": "ACS 2020-2024 5-year",
+      "measure_type": "level",
+      "denominator_key": "renter_households",
+      "denominator": 1061,
+      "min_denominator": 50,
+      "denominator_floor_applied": false
+    },
+    "pct_renters": {
+      "value": 20.1,
+      "geography_level": "place",
+      "confidence": "high",
+      "source_id": "acs-profile",
+      "as_of": "ACS 2020-2024 5-year",
+      "measure_type": "level",
+      "denominator_key": "occupied_households",
+      "denominator": 5273,
+      "min_denominator": 50,
+      "denominator_floor_applied": false
+    },
+    "ami_gap_30pct": {
+      "value": 103,
+      "geography_level": "place",
+      "confidence": "high",
+      "source_id": "ami-gap-place-acs",
+      "as_of": "ACS 2020-2024 5-year",
+      "measure_type": "level"
+    },
+    "low_income_households_lte30": {
+      "value": 295,
+      "geography_level": "place",
+      "confidence": "high",
+      "source_id": "ami-gap-place-acs",
+      "as_of": "ACS 2020-2024 5-year",
+      "measure_type": "level"
+    }
+  },
+  "derived_illustration": {
+    "annual_income_at_30pct_for_median_gross_rent": 58880.0,
+    "formula": "1472 x 12 / 0.30",
+    "use": "Illustration only, not a LIHTC rent limit or eligibility determination"
+  },
+  "reconciliation_note": "The live overview shows 232 for the <=60% AMI price-only gap while the digest has 204. This memo does not use either 60% value. The <=30% AMI price-only gap is 103 in both. The live page distinguishes price-only affordability from HUD affordable-and-available estimates. The Census API check required a key; no independent API re-computation is claimed.",
+  "price_affordable_rentals_lte30": {
+    "value": 192,
+    "basis": "COHO rendered Fruita overview states 295 households and 192 homes priced for them; also 295 minus the consistent 103 price-only gap. This is not an affordable-and-available count."
+  },
+  "ami_threshold_note": "The current COHO Fruita overview labels HUD FY2026 income limits for its AMI/rent-band context. The selected ACS estimates use 2020-2024 five-year inputs. The price-only gap is a COHO calculation, not an official program eligibility result."
+}
