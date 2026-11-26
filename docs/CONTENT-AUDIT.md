@@ -34,7 +34,7 @@ The first GitHub draft did not communicate all of the original firm's scope. It 
 - Site & LIHTC Readiness Review, dedicated entitlement strategy, and a clearly fictional board-ready memo implement the requested housing offer without erasing the full practice.
 - Erie’s official appointment announcement independently supports Paul’s interim title, prior Lyons role, education and management of more than ten comprehensive plans. The previously linked qualifications packet belongs to another firm and has been removed; it is not a pggLLC qualifications package.
 - About explicitly labels this as experience across Paul's career, including prior roles and collaborations, rather than claiming every commission was performed by pggLLC.
-- The Rifle/Fairbanks project examples and teaching claim have been removed pending a suitable PGG/Paul-owned source. COHO Analytics is presented as a directly attributable pggLLC analytical resource.
+- Paul’s City of Rifle and Fairbanks project experience and University of Colorado teaching/research experience are retained at his explicit direction and labeled as individual career history, including prior roles. COHO Analytics is separately presented as directly attributable pggLLC analytical work.
 - Fruita Mews facts remain linked to CHFA, City of Fruita and Housing Colorado sources. The project is attributed to IndiBuild, not presented as a separate pggLLC development.
 - No project photography has been invented. The custom isometric site study is labeled as an illustrative concept, not an actual property or project.
 
@@ -50,3 +50,7 @@ The first GitHub draft did not communicate all of the original firm's scope. It 
 ## Attribution correction
 
 The previously linked municipal archive packet was another firm’s proposal containing an individual Paul Glasgow resume. It must not be presented as PGG qualifications or evidence of a firm affiliation. The site now cites the Town of Erie appointment announcement and Town of Lyons public communication for Paul’s own career facts. No alternative PGG qualifications document has been invented.
+
+## Clarification: preserve individual experience
+
+The owner confirmed that his individual project and teaching history should remain. Those entries have been restored with precise career attribution. Only the other firm’s qualifications packet/link remains removed; no affiliation or substitute firm qualifications package is implied.
